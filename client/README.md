@@ -1,6 +1,6 @@
 ![logo](https://charlesmiller.dev/assets/introLogoDark.png)
 
-# Client side of portfolio
+# Client side of project database
 
 ## Available Scripts
 

@@ -89,7 +89,7 @@ body {
 }
 
 .viewport img {
-  height: 20rem;
+  height: 30vh;
   width: 100%;
 }
 .viewport__title span {
