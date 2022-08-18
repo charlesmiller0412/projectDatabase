@@ -1,0 +1,15 @@
+$theme-colors: (
+    "off-black": #12252b,
+    "off-white": #efefef,
+    "blue": #7eaecd,
+    "light-blue": #a1dcf0,
+    "gray": #384b52,
+);
+
+@import "./abstract/__variables";
+@import "./base/_generic";
+@import "./sections/_sidebar";
+@import "./sections/_viewport";
+@import "./sections/_content";
+@import "./sections/_gallery";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

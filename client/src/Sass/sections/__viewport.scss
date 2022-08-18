@@ -1,0 +1,21 @@
+.viewport {
+    img {
+        height: 20rem;
+        width: 100%;
+    }
+    &__title {
+        & span {
+            font-size: 0.8rem;
+        }
+    }
+    &__skills {
+        & li {
+            width: fit-content;
+            font-size: 0.8rem;
+        }
+    }
+    &__links {
+        width: 80%;
+        margin: auto;
+    }
+}

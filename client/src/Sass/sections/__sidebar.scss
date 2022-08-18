@@ -1,0 +1,79 @@
+.sidebar {
+    background: linear-gradient(270deg, $color-gray, $color-black);
+    & h1 {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-light-blue;
+        font-family: $font-proxima;
+    }
+    & h2 {
+        font-size: 0.9rem;
+    }
+    & ul {
+        & a {
+            display: block;
+            cursor: pointer;
+            font-style: $font-serenity;
+            color: $color-white;
+            text-decoration: none;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+    }
+}
+
+.active {
+    background-color: $color-white;
+    font-weight: 700;
+    color: $color-black !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.searchBar {
+    height: 4%;
+    user-select: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    & input {
+        padding-left: 0.5vw;
+        font-size: 0.9rem;
+        &::placeholder {
+            font-size: 0.7rem;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    & button {
+        height: 1.8rem;
+        width: 2rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        &:active {
+            transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+        }
+    }
+}
