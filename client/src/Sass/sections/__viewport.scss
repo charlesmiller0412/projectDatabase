@@ -1,21 +1,56 @@
 .viewport {
     img {
-        height: 25vh;
+        height: auto;
         width: 100%;
+    }
+    p {
+        font-size: clamp(0.8rem, 1vw, 1rem);
     }
     &__title {
         & span {
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1vw, 0.9rem);
         }
     }
     &__skills {
         & li {
             width: fit-content;
-            font-size: 0.8rem;
+            font-size: clamp(0.6rem, 1vw, 0.8rem);
+            z-index: 2;
         }
     }
     &__links {
-        width: 80%;
         margin: auto;
+        & a {
+            font-size: clamp(0.5rem, 1vw, 0.8rem);
+            white-space: nowrap;
+        }
     }
+}
+
+.button {
+    display: inline-block;
+    background: $color-gray;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.button:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+    transform: translate(0px, -10px) scale(1.2);
+    -moz-transform: translate(0px, -10px) scale(1.2);
+    -ms-transform: translate(0px, -10px) scale(1.2);
+    -o-transform: translate(0px, -10px) scale(1.2);
 }

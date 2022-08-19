@@ -72,7 +72,7 @@ export default function Viewport() {
                     {projects.languages.map((language) => (
                         <li
                             key={language}
-                            className="list-inline-item bg-blue text-off-black m-2 px-3 rounded-pill"
+                            className="list-inline-item bg-blue text-off-black my-1 px-3 rounded-pill"
                         >
                             {language.toUpperCase()}
                         </li>
@@ -86,9 +86,9 @@ export default function Viewport() {
                             href={projects.codeurl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-decoration-none text-blue fw-bold"
+                            className="text-decoration-none button text-blue fw-bold"
                         >
-                            See the code
+                            <span>See the code</span>
                             <FontAwesomeIcon
                                 icon={faLongArrowAltRight}
                                 className="ms-2"
@@ -98,9 +98,9 @@ export default function Viewport() {
                             href={projects.siteurl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-decoration-none text-blue fw-bold"
+                            className="text-decoration-none button text-blue fw-bold"
                         >
-                            See the site
+                            <span>See the site</span>
                             <FontAwesomeIcon
                                 icon={faLongArrowAltRight}
                                 className="ms-2"
@@ -108,14 +108,14 @@ export default function Viewport() {
                         </a>
                     </div>
                 ) : (
-                    <div id="viewport__links d-flex justify-content-between">
+                    <div id="viewport__links  d-flex justify-content-between">
                         <a
                             href={projects.processurl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-decoration-none text-blue fw-bold "
+                            className="text-decoration-none text-off-white fw-bold "
                         >
-                            See the process
+                            <span>See the process</span>
                             <FontAwesomeIcon
                                 icon={faLongArrowAltRight}
                                 className="ms-2"

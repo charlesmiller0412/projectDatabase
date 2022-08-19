@@ -1,10 +1,6 @@
 .gallery {
     overflow: scroll;
     height: 100%;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-        display: none;
-    }
     &__card {
         min-width: 12rem;
         max-width: 15rem;
@@ -25,17 +21,15 @@
         &--bottom {
             height: 60%;
             h2 {
-                font-size: clamp(0.8rem, 1vw, 1.2rem);
+                font-size: clamp(0.7rem, 1vw, 1rem);
                 white-space: nowrap;
             }
             h3 {
-                font-size: clamp(0.8rem, 0.8vw, 1rem);
+                font-size: clamp(0.7rem, 0.8vw, 1rem);
             }
             ul {
                 overflow: scroll;
-                &::-webkit-scrollbar {
-                    display: none;
-                }
+
                 & li {
                     font-size: clamp(0.6rem, 0.8vw, 0.8rem);
                 }

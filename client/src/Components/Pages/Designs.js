@@ -69,7 +69,7 @@ export default function Designs() {
                     <img src={project.imgurl} alt="Weather" className="w-100" />
                 </div>
                 <div className="gallery__card--bottom text-center bg-white">
-                    <h2 className="fw-bold pt-2 mb-3 border-bottom border-blue w-75 m-auto">
+                    <h2 className="fw-bold pt-2 mb-3 m-auto">
                         {project.title}
                     </h2>
                     <div className="w-100 h-25 mb-2">
