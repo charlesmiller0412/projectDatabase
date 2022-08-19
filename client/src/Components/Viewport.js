@@ -26,7 +26,7 @@ export default function Viewport() {
     const fetchProjects = async () => {
         try {
             const response = await fetch(
-                `http://localhost:5001/api/projects/${currentProject}`
+                `https://millerprojectdatabase.herokuapp.com/api/projects/${currentProject}`
             );
             const json = await response.json();
             setProjects(json);

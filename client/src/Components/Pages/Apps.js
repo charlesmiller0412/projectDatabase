@@ -24,7 +24,7 @@ export default function Apps() {
     const fetchProjects = async () => {
         try {
             const response = await fetch(
-                "http://localhost:5001/api/projects/apps"
+                "https://millerprojectdatabase.herokuapp.com/api/projects/apps"
             );
             const json = await response.json();
             setProjects(json);

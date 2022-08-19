@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.Fragment>
-        <BrowserRouter>
+        <BrowserRouter basename="/projectDatabase">
             <App />
         </BrowserRouter>
     </React.Fragment>

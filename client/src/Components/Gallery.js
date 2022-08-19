@@ -9,11 +9,11 @@ export default function Gallery() {
     return (
         <div className="gallery bg-off-white py-4 col-md-6 col-xl-7 d-flex justify-content-center align-items-center">
             <Routes>
-                <Route path="/" element={<Favorites />} />
-                <Route path="/All" element={<All />} />
-                <Route path="/web" element={<Web />} />
-                <Route path="/apps" element={<Apps />} />
-                <Route path="/designs" element={<Designs />} />
+                <Route path="/" element={<Favorites />} exact />
+                <Route path="/All" element={<All />} exact />
+                <Route path="/web" element={<Web />} exact />
+                <Route path="/apps" element={<Apps />} exact />
+                <Route path="/designs" element={<Designs />} exact />
             </Routes>
         </div>
     );

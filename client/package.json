@@ -1,6 +1,6 @@
 {
     "name": "client",
-    "homepage": "https://www.charlesmiller.dev/projectDatabase",
+    "homepage": "https://www.charlesmiller.dev/projectDatabase/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

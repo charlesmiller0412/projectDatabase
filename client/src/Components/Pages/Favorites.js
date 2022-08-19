@@ -24,7 +24,7 @@ export default function Favorites() {
     const fetchProjects = async () => {
         try {
             const response = await fetch(
-                "http://localhost:5001/api/projects/favorites"
+                "https://millerprojectdatabase.herokuapp.com/api/projects/favorites"
             );
             const json = await response.json();
             setProjects(json);
