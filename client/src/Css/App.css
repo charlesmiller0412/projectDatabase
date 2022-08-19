@@ -152,7 +152,7 @@ body {
 }
 
 .gallery {
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
 }
 .gallery__card {
@@ -184,7 +184,7 @@ body {
   font-size: clamp(0.7rem, 0.8vw, 1rem);
 }
 .gallery__card--bottom ul {
-  overflow: scroll;
+  overflow: auto;
 }
 .gallery__card--bottom ul li {
   font-size: clamp(0.6rem, 0.8vw, 0.8rem);

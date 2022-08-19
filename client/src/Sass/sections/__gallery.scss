@@ -1,5 +1,5 @@
 .gallery {
-    overflow: scroll;
+    overflow: auto;
     height: 100%;
     &__card {
         min-width: 12rem;
@@ -28,7 +28,7 @@
                 font-size: clamp(0.7rem, 0.8vw, 1rem);
             }
             ul {
-                overflow: scroll;
+                overflow: auto;
 
                 & li {
                     font-size: clamp(0.6rem, 0.8vw, 0.8rem);
