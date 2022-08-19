@@ -55,11 +55,19 @@ const getDesigns = async (req, res) => {
     return;
 };
 
+const getPortfolios = async (req, res) => {
+    const projects = await Project.find({ type: "portfolio" });
+    res.status(200).json(projects);
+    console.log("app is running");
+    return;
+};
+
 module.exports = {
     getAll,
     getFavorites,
     getWeb,
     getApps,
     getDesigns,
+    getPortfolios,
     getById,
 };

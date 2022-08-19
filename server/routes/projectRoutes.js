@@ -6,6 +6,7 @@ const {
     getWeb,
     getApps,
     getDesigns,
+    getPortfolios,
     getById,
 } = require("../controller/projectController");
 
@@ -23,6 +24,9 @@ router.get("/apps", getApps);
 
 // get designs
 router.get("/designs", getDesigns);
+
+// get past portfolios
+router.get("/portfolios", getPortfolios);
 
 // get by id
 router.get("/:id", getById);

@@ -18,6 +18,9 @@ export default function Links() {
             <NavLink to="/designs" className="py-3">
                 Designs
             </NavLink>
+            <NavLink to="/portfolios" className="py-3">
+                Portfolios (Past &amp; Present)
+            </NavLink>
         </ul>
     );
 }

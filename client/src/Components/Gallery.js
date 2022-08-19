@@ -3,6 +3,7 @@ import All from "./Pages/All";
 import Web from "./Pages/Web";
 import Apps from "./Pages/Apps";
 import Designs from "./Pages/Designs";
+import Portfolios from "./Pages/Portfolios";
 import { Route, Routes } from "react-router-dom";
 
 export default function Gallery() {
@@ -14,6 +15,7 @@ export default function Gallery() {
                 <Route path="/web" element={<Web />} exact />
                 <Route path="/apps" element={<Apps />} exact />
                 <Route path="/designs" element={<Designs />} exact />
+                <Route path="/portfolios" element={<Portfolios />} exact />
             </Routes>
         </div>
     );
