@@ -8,7 +8,7 @@ import { Route, Routes } from "react-router-dom";
 
 export default function Gallery() {
     return (
-        <div className="gallery bg-off-white py-4 col-md-6 col-xl-7 d-flex justify-content-center align-items-center">
+        <div className="gallery bg-off-white py-4 col-12 col-md-6 col-xl-7 d-flex justify-content-center align-items-center">
             <Routes>
                 <Route path="/" element={<Favorites />} exact />
                 <Route path="/All" element={<All />} exact />

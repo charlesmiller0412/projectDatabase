@@ -2,7 +2,7 @@
     overflow: auto;
     height: 100%;
     &__card {
-        min-width: 12rem;
+        min-width: 10rem;
         max-width: 15rem;
         height: 32vh;
         cursor: pointer;
@@ -37,6 +37,15 @@
             span {
                 font-size: clamp(0.6rem, 0.8vw, 0.8rem);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery {
+        height: 60vh;
+        &__card {
+            height: 25vh;
         }
     }
 }

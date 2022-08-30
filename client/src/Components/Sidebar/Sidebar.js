@@ -3,7 +3,7 @@ import Links from "./Links";
 
 export default function Sidebar() {
     return (
-        <div className="sidebar col-md-2 text-center">
+        <div className="sidebar d-none d-md-inline col-md-2 text-center">
             <img src={Logo} alt="logo" className="w-75 mt-5" />
             <h1 className="text-off-white text-uppercase my-4 fw-bold">
                 Project Database

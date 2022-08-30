@@ -1,5 +1,5 @@
 .viewport {
-    img {
+    & img {
         height: auto;
         width: 100%;
     }
@@ -21,7 +21,7 @@
     &__links {
         margin: auto;
         & a {
-            font-size: clamp(0.5rem, 1vw, 0.8rem);
+            font-size: clamp(0.7rem, 1vw, 0.8rem);
             white-space: nowrap;
         }
     }
@@ -53,4 +53,50 @@
     -moz-transform: translate(0px, -10px) scale(1.2);
     -ms-transform: translate(0px, -10px) scale(1.2);
     -o-transform: translate(0px, -10px) scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+    .viewport {
+        bottom: -22.5vh;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        height: fit-content;
+        min-height: 25rem;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        &__button {
+            background-color: $color-gray;
+            border: none;
+            border-bottom: 1px solid $color-light-blue;
+            color: $color-light-blue;
+        }
+        &__image {
+            height: 7rem;
+            & img {
+                height: 4.5rem;
+                // width: 50%;
+            }
+        }
+        &__title {
+            white-space: nowrap;
+        }
+        &__description {
+            height: 8rem;
+        }
+        &__grow {
+            position: absolute;
+            bottom: 0;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+        }
+    }
 }

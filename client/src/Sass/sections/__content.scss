@@ -8,3 +8,15 @@
     -o-border-radius: 25px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 850px) {
+    .content {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
