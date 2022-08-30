@@ -12,17 +12,23 @@ export default function MobileNav() {
             <h1 className="text-off-white text-uppercase mt-3 fw-bold">
                 Project Database
             </h1>
-            <h2
-                onClick={() => hideMobileNav(!mobileNav)}
-                className="w-75 fw-bold text-off-white m-auto text-uppercase pb-2 d-flex align-content-center justify-content-center"
-            >
-                Select a type
-                {mobileNav ? (
+            {mobileNav ? (
+                <h2
+                    onClick={() => hideMobileNav(!mobileNav)}
+                    className="w-75 fw-bold text-off-white m-auto text-uppercase pb-2 d-flex align-content-center justify-content-center"
+                >
+                    Select a type
                     <FontAwesomeIcon icon={faSortDown} className="ms-2" />
-                ) : (
+                </h2>
+            ) : (
+                <h2
+                    onClick={() => hideMobileNav(!mobileNav)}
+                    className="w-75 fw-bold text-off-white m-auto text-uppercase pb-2 d-flex align-content-center justify-content-center"
+                >
+                    Close{" "}
                     <FontAwesomeIcon icon={faSortUp} className="ms-2 mt-1" />
-                )}
-            </h2>
+                </h2>
+            )}
             {mobileNav ? "" : <Links />}
         </div>
     );
