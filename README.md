@@ -18,4 +18,8 @@
 
 ---
 
+### npm start --- client
+
+### npm run dev --- server
+
 [charlesmiller.dev](https://www.charlesmiller.dev])
