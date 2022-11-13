@@ -24,7 +24,7 @@ export default function Designs() {
     const fetchProjects = async () => {
         try {
             const response = await fetch(
-                "https://millerprojectdatabase.herokuapp.com/api/projects/designs"
+                "https://dbserver.onrender.com/api/projects/designs"
             );
             const json = await response.json();
             setProjects(json);
